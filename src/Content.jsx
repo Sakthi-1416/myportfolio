@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileImage from './assets/profile.png'
+import ProfileImage from './assets/profile1.png'
 export const Content = () => {
   return (
      <div className='Content-cont d-flex' id='home'>
