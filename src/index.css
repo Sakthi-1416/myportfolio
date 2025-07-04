@@ -1,0 +1,243 @@
+
+/* Header */
+#nav-main,footer
+{
+  background:linear-gradient(to left, rgb(18, 80, 194), rgb(96, 6, 138)) !important;
+}
+#Header-text
+{
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.nav-link,a
+{
+color: white !important;
+}
+
+/* Content */
+.Content-cont,.Skill-cont 
+{
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(0, 255, 255); */
+  background-image: url('./assets/triangle-round-asymmetrical.png');
+  background-image: url('./assets/scattered-forcefields.png');
+  /* background-image: url('./assets/endless-constellation.png'); */
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom; */
+ padding: 1rem;
+ 
+
+}
+.shape1
+{
+/* clip-path: circle(27.0% at 98% 3%); */
+  /* background-color: rgb(159, 39, 170); */
+   width: 50%;
+  height: 100%;
+  animation: popup 4s linear 1s ;
+  /* border: 2px solid red; */
+}
+.shape1 img
+{
+filter: drop-shadow(8px 8px 16px rgb(61, 10, 41));
+max-height: 500px
+}
+.shape2
+{
+   width: 50%;
+}
+.H-text
+{
+  background: linear-gradient(to left,rgb(64 30 114), rgb(96, 6, 138));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  font-size: minmax(2rem,3rem);
+}
+
+@keyframes popup
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    40%
+    {
+        opacity: 0.3;
+        transform: translateY(-30px);
+    }
+    70%
+    {
+        opacity: 0.6;
+        transform: translateY(50px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* skill */
+/* Skills.css */
+.skills-section {
+  background-color: #ffffff;
+  height: auto;
+}
+
+.skill-bar {
+  height: 90px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: width 2s ease-in-out;
+  animation: slide-in 3s ease forwards;
+}
+
+@keyframes slide-in {
+  from {
+    width: 0;
+  }
+  to {
+    /* Final width is set via inline style */
+  }
+}
+
+
+/* project */
+.Projects
+{
+  background: linear-gradient(to right, rgb(64 30 114), #2a5298);
+  color: wheat;
+}
+
+
+/* contact */
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0px
+}
+
+form {
+    width: 400px;
+    background-color: rgba(255, 252, 252);
+    max-height: 550px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 5px #46444f;
+    color: rgb(10, 10, 10);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+form h2 {
+    margin-bottom: 50px;
+}
+
+form input,
+textarea {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    margin: 5px 0 10px 0;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+form textarea {
+    height: 60px;
+}
+
+form label {
+    font-size: 15px;
+}
+
+form button {
+    background-color: blueviolet;
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.sm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 1s linear .5s;
+    padding: 4px;
+}
+
+.fa-brands:hover {
+    transform: translateY(-8px);
+}
+/* Project section */
+.pro-con {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 20px;
+  /* background-color: aqua; */
+}
+
+.pro-pic {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pro-pic img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pro-pic:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 900px) {
+  .pro-con {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pro-con {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pro-pic img {
+    width: 70%;
+    height: 100%;
+}
+
+.pro-pic p {
+    margin-top: 8px;
+}
+
+.pro-pic:hover {
+    transform: scale(1.1);
+}
