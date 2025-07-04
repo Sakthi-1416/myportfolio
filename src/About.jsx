@@ -5,7 +5,7 @@ export const About = () => {
    <div
       className="py-5 text-white animate__animated animate__fadeIn"
       style={{
-        background: 'linear-gradient(to right, #1e3c72, #2a5298)',
+        background: 'linear-gradient(to right, #1e3c72,rgb(132 46 118))',
        
       }}
     >
